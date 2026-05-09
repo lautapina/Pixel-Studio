@@ -1,0 +1,455 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333333;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #222222;
+}
+
+.banner {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.banner-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.banner-contenido {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: #ffffff;
+    padding: 2rem;
+    max-width: 800px;
+}
+
+.banner-contenido h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 6rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    letter-spacing: 4px;
+    color: #ffffff;
+    text-shadow: 2px 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+.banner-contenido p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #f0f0f0;
+    text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: #361a1d;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ffa3a9;
+}
+
+.servicios {
+    padding: 12rem 2rem;
+    background-color: #201b1b;
+}
+
+.pastillas-grid {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.pastilla {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 1.8rem 1.5rem;
+    text-align: center;
+    border-radius: 12px;
+    transition: transform 0.3s ease, background-color 0.3s ease, border 0.3s ease;
+    flex: 1;
+}
+
+.pastilla:hover {
+    transform: translateY(-6px);
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 163, 169, 0.5);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.pastilla img {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 1.2rem auto;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+.pastilla h3 {
+    color: #ffffff;
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+    letter-spacing: 1px;
+}
+
+.pastilla p {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.65);
+    margin-top: 0.5rem;
+    line-height: 1.6;
+}
+
+.quienes-somos {
+    padding: 4rem 2rem;
+    background-image: url('img/banner.png');
+}
+
+.quienes-contenido {
+    display: flex;
+    gap: 3rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: flex-start;
+}
+
+.quienes-texto {
+    flex: 1;
+}
+
+.quienes-texto h2 {
+    text-align: left;
+    font-size: 5rem;
+}
+
+.quienes-texto p {
+    margin-bottom: 1.2rem;
+    color: #ffffff;
+    line-height: 1.8;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.quienes-imagen {
+    flex: 1;
+}
+
+.quienes-imagen img {
+    width: 100%;
+    border-radius: 12rem;
+    margin-top: 15%;
+}
+
+.resenas {
+    padding: 8rem 2rem;
+    background-color: #201b1b;
+}
+
+.resenas h2 {
+    font-family: 'Playfair Display', serif;
+    text-align: left;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.resenas-wrapper {
+    display: flex;
+    gap: 1.5rem;
+    max-width: 1300px;
+    margin: 0 auto;
+    align-items: stretch;
+}
+
+.resenas-grid {
+    display: flex;
+    gap: 1.5rem;
+    flex: 3;
+}
+
+.resena {
+    flex: 1;
+    background-color: #f0eee5;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.resena img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 1.2rem auto;
+}
+
+.resena blockquote p {
+    font-style: italic;
+    color: #444;
+    margin-bottom: 1.2rem;
+    line-height: 1.7;
+    font-size: 0.9rem;
+}
+
+.nombre-cliente {
+    font-weight: bold;
+    color: #222222;
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.cargo-cliente {
+    font-size: 0.82rem;
+    color: #7a5c5c;
+}
+
+.etiqueta-ceo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1%;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #ffa3a9;
+    border: 2px solid #c53b44;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    margin-bottom: rem;
+}
+
+.card-alumno {
+    flex: 1;
+    background-color: #2a1515;
+    border: 2px solid rgb(212, 48, 59);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    margin-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.card-alumno img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 1.2rem auto;
+    border: 3px solid #f8dcdc;
+}
+
+.card-alumno h3 {
+    margin-bottom: 0.8rem;
+    font-size: 1.8rem;
+    color: #ffffff;
+}
+
+.card-alumno p {
+    margin-bottom: 0.3rem;
+    font-size: 0.88rem;
+    color: rgb(255, 255, 255);
+}
+
+.card-alumno p strong {
+    color: #ff5863;
+}
+
+.alumno-text{
+    text-align: start;
+}
+.footer {
+    background-color: #dfd9d9;
+    color: #1b1515;
+    padding: 3rem 2rem 1.5rem;
+}
+
+.footer-contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1100px;
+    margin: 0 auto;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.footer-datos p {
+    margin-bottom: 0.4rem;
+    font-size: 0.9rem;
+}
+
+.footer-datos strong {
+    color: #220f0f;
+}
+
+.footer-redes {
+    text-align: right;
+}
+
+.footer-redes p {
+    margin-top: 40%;
+    text-align: left;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.footer-redes a {
+    display: inline-block;
+    margin-left: 0.8rem;
+}
+
+.footer-redes img {
+    width: 1.8rem;
+    height: 1.8rem;
+    transition: opacity 0.1s ease;
+}
+
+.footer-redes img:hover {
+    opacity: 0.7;
+}
+
+.footer-copy {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.85rem;
+    color: #1a0808;
+    border-top: 1px solid #444444;
+    padding-top: 1rem;
+}
+
+@media (max-width: 768px) {
+
+    .banner-contenido h1 {
+        font-size: 2.5rem;
+    }
+
+    .banner-contenido p {
+        font-size: 1rem;
+    }
+
+    .pastillas-grid {
+        flex-wrap: wrap;
+    }
+
+    .pastilla {
+        flex: 1 1 calc(50% - 1.5rem);
+    }
+
+    .quienes-contenido {
+        flex-direction: column;
+    }
+
+    .quienes-texto h2 {
+        text-align: center;
+    }
+
+    .resenas-wrapper {
+        flex-direction: column;
+    }
+
+    .resenas-grid {
+        flex-direction: column;
+    }
+
+    .card-alumno {
+        margin-left: 0;
+        margin-top: 2rem;
+    }
+
+    .footer-contenido {
+        flex-direction: column;
+    }
+
+    .footer-redes {
+        text-align: left;
+    }
+
+    .footer-redes a {
+        margin-left: 0;
+        margin-right: 0.8rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .banner {
+        min-height: 70vh;
+    }
+
+    .banner-contenido h1 {
+        font-size: 2rem;
+    }
+
+    .pastilla {
+        flex: 1 1 100%;
+    }
+
+    .servicios,
+    .quienes-somos,
+    .resenas {
+        padding: 2.5rem 1rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    .footer {
+        padding: 2.5rem 1rem 1rem;
+    }
+
+    .footer-redes {
+        margin-left: 0;
+    }
+
+}
